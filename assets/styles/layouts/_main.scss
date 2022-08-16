@@ -1,0 +1,62 @@
+main{
+    background: $black;
+   padding-bottom: 350px;
+
+    .main-header{
+        text-align: center;
+        padding-top: 40px;
+        margin-bottom: 40px;
+        
+        .discover{
+            h3 {
+                color: $red;
+                
+                font-weight: 500;
+            }
+
+            img{
+                margin: 30px 0;
+            }
+        }
+
+        .main-nav{
+            display: flex;
+            color: $white;
+            justify-content: space-between;
+            font-family: $roboto;
+            letter-spacing: 1px;
+            font-size: 1rem;
+            font-weight: normal;
+            width: 50%;
+            min-width: 500px;
+            margin: 0 auto;
+            padding: 0;
+            
+
+            @media screen and (max-width: 680px) {
+                    min-width: 200px;
+                    width: 70%;
+                    font-size: 0.65rem;
+            
+            }
+            
+            
+            
+
+            li{
+                // padding: 10px 40px;
+                position: relative;
+                text-align: center;
+                &::after{
+                    content: "";
+                    height: 1px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: -10px;
+                    background: $gray;
+                    transform: translateX(-100%); 
+                }
+            }
+        }
+    }
+}

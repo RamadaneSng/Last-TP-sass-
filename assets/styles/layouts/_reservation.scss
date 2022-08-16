@@ -1,0 +1,146 @@
+.reservation{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 0 100px;
+
+    @media screen and (max-width: 850px) {
+           display: block;
+           
+    
+        }
+
+    .reservation-left{
+        background: black;
+        padding: 25px;
+
+        .content{
+            color: white;
+            text-align: center;
+            border: 1px dashed $gray;
+            padding: 20px 30px;
+
+            .discover{
+                h3{
+                    color: $red;
+                    font-weight: normal;
+                    text-transform: capitalize;
+                }
+
+                p{
+                    margin: -10px 0 30px;
+                    font-family: $poppins;
+                    font-size: 1.5rem;
+                }
+            }
+
+            div{
+                h4{
+                    color: $red;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-family: $poppins;
+                    font-weight: normal;
+                }
+
+                p{
+                    margin: 0;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+
+    .reservation-right{
+        background: $white;
+        text-align: center;
+        padding: 60px 10px 20px;
+        .discover {
+            
+            h3 {
+                color: $red;
+                font-weight: 100;
+                font-size: 2.5rem;
+                text-transform: capitalize;
+            }
+        
+            p {
+                margin: -10px 0 30px;
+                font-family: $poppins;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+        }
+
+        form{
+            display: grid;
+            width: 70%;
+            margin: 0 auto;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: repeat(1fr, 2);
+            
+            @media screen and (max-width: 680px) {
+                    grid-template-columns: 1fr;
+            
+            }
+            
+
+            select , input {
+                border: none;
+                border-bottom: 1px solid $gray;
+                background: none;
+                margin: 10px;
+                padding: 10px 0;
+                font-size: 0.9rem;
+                font-weight: 500;
+                // max-width: 90%;
+                outline: none;
+                
+                
+            }
+
+        }
+
+        input[type="submit"]{
+            font-family: $poppins;
+            background: $black;
+            color: $white;
+            padding: 16px 34px;
+            letter-spacing: 5px; 
+            border-radius: 50px;
+            font-weight: 700;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover{
+                transform: translateX(-3px);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.433);
+            }
+        }
+    }
+
+}
+
+.event-discover{
+    text-align: center;
+    h3 {
+        color: $red;
+        font-weight: 100;
+        font-size: 2.5rem;
+        text-transform: capitalize;
+    }
+    
+    p {
+        margin: -10px 0 30px;
+        font-family: $poppins;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $white;
+        letter-spacing: 2px;
+    }
+}
